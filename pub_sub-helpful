@@ -1,3 +1,15 @@
+on localhost:
+    sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
+  start mqtt:
+    sudo apt-get update
+		
+	pub + sub:
+		mosquitto_pub -h localhost -t test -m "hello2"
+		mosquitto_sub -h localhost -t test
+			or
+		./while_loop-print_hello-1
+		./while_loop-print_hello-2
+
 on digital ocean:
 	access token:  JOIgHO0GyBnKg0tYCyFs
 	device id: b7879250-0a32-11eb-98b1-e3976be066e3

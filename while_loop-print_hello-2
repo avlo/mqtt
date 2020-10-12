@@ -1,0 +1,7 @@
+#! /bin/bash
+end=$((SECONDS+200))
+
+while [ $SECONDS -lt $end ]; do
+  mosquitto_pub -h localhost -t test -m "hello world"
+  sleep 3s
+done
