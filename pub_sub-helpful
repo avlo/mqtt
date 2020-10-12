@@ -1,0 +1,8 @@
+on digital ocean:
+	access token:  JOIgHO0GyBnKg0tYCyFs
+	device id: b7879250-0a32-11eb-98b1-e3976be066e3
+
+	mosquitto_pub -d -h "127.0.0.1" -t "v1/devices/me/telemetry" -u "JOIgHO0GyBnKg0tYCyFs" -f "telemetry.json"
+
+	public dashboard
+		http://157.245.176.153:8080/dashboard/d2b178d0-0a36-11eb-98b1-e3976be066e3?publicId=f268be60-0a34-11eb-98b1-e3976be066e3
