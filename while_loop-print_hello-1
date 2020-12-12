@@ -1,7 +1,8 @@
 #! /bin/bash
-end=$((SECONDS+100))
 
-while [ $SECONDS -lt $end ]; do
-  mosquitto_pub -h localhost -t test -m "hello one"
-  sleep 5s
+i=0
+while true; do
+  mosquitto_pub -h localhost -t test -m "hello one $i"	
+	((i=i+1))
+  sleep 1s
 done
