@@ -1,0 +1,12 @@
+{"level":"info","timestamp":"2020-12-15T17:50:19.796-0800","logger":"broker","caller":"broker/broker.go:269","msg":"read connect from ","clientID":""}
+
+{"level":"warn","timestamp":"2020-12-15T17:50:19.797-0800","logger":"broker","caller":"broker/broker.go:342","msg":"client exist, close old...","clientID":""}
+
+{"level":"error","timestamp":"2020-12-15T17:50:19.797-0800","logger":"broker","caller":"broker/client.go:143","msg":"read packet error: ","error":"read tcp 127.0.0.1:1883->127.0.0.1:41460: use of closed network connection","ClientID":""}
+
+{"level":"error","timestamp":"2020-12-15T17:50:19.797-0800","logger":"broker","caller":"broker/client.go:143","msg":"read packet error: ","error":"EOF","ClientID":""}
+
+req(qu/pe/proc/lat): 00000/00000/00000/0000ms, reqQMs: 0, processor: 00000, LSMI/LMI: 2131553/2131553, TPS (in/new/out): 00000/00000/00000, Tips (non-/semi-lazy): 1/0
+
+{level":"info","timestamp":"2020-12-15T17:50:20.799-0800","logger":"broker","caller":"broker/broker.go:269","msg":"read connect from ","clientID":""}
+

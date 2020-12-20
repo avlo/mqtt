@@ -2,7 +2,7 @@
 
 i=0
 while true; do
-  mosquitto_pub -h localhost -t test -m "hello one $i"	
+  mosquitto_pub -h "localhost" -t "go-mqtt/sample" -m "hello one $i" -V "31"
 	((i=i+1))
   sleep 1s
 done
